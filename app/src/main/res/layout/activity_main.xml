@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/totalQuestao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Total Questão"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Questao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choices_layout"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-295dp"
+        android:text="Essa será a questão"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="330dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ansA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FF0000"
+            android:text="Ans A"
+            android:textColor="@color/white"
+            app:cornerRadius="40dp"></Button>
+
+        <Button
+            android:id="@+id/ansB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FF0000"
+            android:text="Ans B"
+            android:textColor="@color/white"
+            app:cornerRadius="40dp"></Button>
+
+        <Button
+            android:id="@+id/ansC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FF0000"
+            android:text="Ans C"
+            android:textColor="@color/white"
+            app:cornerRadius="40dp"></Button>
+
+        <Button
+            android:id="@+id/ansD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#FF0000"
+            android:text="Ans D"
+            android:textColor="@color/white"
+            app:cornerRadius="40dp"></Button>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#25551A"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        app:cornerRadius="40dp"></Button>
+
+    <ImageView
+        android:id="@+id/imgPlaca"
+        android:layout_width="500dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/Questao"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFFFF"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</RelativeLayout>
+
+
+
+
